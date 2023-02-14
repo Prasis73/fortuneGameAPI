@@ -44,15 +44,16 @@ const PORT=process.env.PORT || 8080;
 app.listen(PORT,()=>{
     console.log("Server is okay at ",PORT);
 })
-const firebaseConfig = {
-    apiKey: "AIzaSyCjmiIX8H2ty0bgCeetCuJpx51VlmZgW7g",
-    authDomain: "upwork-df50e.firebaseapp.com",
-    projectId: "upwork-df50e",
-    storageBucket: "upwork-df50e.appspot.com",
-    messagingSenderId: "266788837318",
-    appId: "1:266788837318:web:5685af3905de9ca25b84c7",
-    measurementId: "G-DK2EK7FQF1"
-  }; 
+//copy config.js for here
+/* const firebaseConfig = {
+  apiKey: YOUR API KEY,
+  authDomain: YOUR AUTH DOMAIN,
+  projectId: your Firebase project id,
+  storageBucket: ,
+  messagingSenderId: ,
+  appId: ,
+  measurementId:
+};  */
  firebase.initializeApp({
     credentials:firebase.credential.cert(credentials),
     firebaseConfig
@@ -98,7 +99,7 @@ app.get('/create',async(req,res)=>{
         }).catch((err)=>{
            console.log(err)
         });
-},60000)
+},20000)
 });
 /* 
 app.get('/',async (req,res)=>{
