@@ -1,7 +1,2 @@
-TEST/node_modules
-/node_modules
-.node_modules
-.congif.js
-/config.js
-TEST/config.js
-.TEST/config.js
+node_modules
+config.js
