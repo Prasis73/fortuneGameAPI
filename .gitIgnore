@@ -1,4 +1,4 @@
 /node_modules
-node_modules
-congif.js
+.node_modules
+.congif.js
 /config.js
